@@ -1,0 +1,72 @@
+[debug] [2023-07-15T16:14:07.526Z] ----------------------------------------------------------------------
+[debug] [2023-07-15T16:14:07.528Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-15T16:14:07.529Z] CLI Version:   12.4.4
+[debug] [2023-07-15T16:14:07.529Z] Platform:      win32
+[debug] [2023-07-15T16:14:07.529Z] Node Version:  v18.16.1
+[debug] [2023-07-15T16:14:07.530Z] Time:          Sat Jul 15 2023 21:44:07 GMT+0530 (India Standard Time)
+[debug] [2023-07-15T16:14:07.530Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-15T16:14:07.633Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-15T16:14:07.633Z] > authorizing via signed-in user (asjadhaider3@gmail.com)
+[debug] [2023-07-15T16:14:07.633Z] [iam] checking project netflix-react-a959c for permissions ["firebase.projects.get"]
+[debug] [2023-07-15T16:14:07.635Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions [none]
+[debug] [2023-07-15T16:14:07.635Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions x-goog-quota-user=projects/netflix-react-a959c
+[debug] [2023-07-15T16:14:07.635Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-15T16:14:09.337Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions 200
+[debug] [2023-07-15T16:14:09.337Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-15T16:14:09.338Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c [none]
+[debug] [2023-07-15T16:14:09.968Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c 200
+[debug] [2023-07-15T16:14:09.968Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c {"projectId":"netflix-react-a959c","projectNumber":"188246924199","displayName":"Netflix-react","name":"projects/netflix-react-a959c","resources":{"hostingSite":"netflix-react-a959c"},"state":"ACTIVE","etag":"1_ffee69c7-63f1-4fa8-bd6a-15d44c40c5f8"}
+[info] 
+[info] === Serving from 'C:\Users\HP\OneDrive\Desktop\Netflix-clone-master'...
+[info] 
+[debug] [2023-07-15T16:14:09.974Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-react-a959c/sites 
+[debug] [2023-07-15T16:14:11.286Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-react-a959c/sites 200
+[debug] [2023-07-15T16:14:11.286Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-react-a959c/sites {"sites":[{"name":"projects/netflix-react-a959c/sites/netflix-react-a959c","defaultUrl":"https://netflix-react-a959c.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-15T16:14:11.287Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c/webApps/-/config [none]
+[debug] [2023-07-15T16:14:12.724Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c/webApps/-/config 200
+[debug] [2023-07-15T16:14:12.724Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c/webApps/-/config {"projectId":"netflix-react-a959c","appId":"1:188246924199:web:6e420a570ca0bc67403482","storageBucket":"netflix-react-a959c.appspot.com","apiKey":"AIzaSyC4RFQ4UkpmPCDn3dTeCUAYVZbq9vr4Mys","authDomain":"netflix-react-a959c.firebaseapp.com","messagingSenderId":"188246924199"}
+[debug] [2023-07-15T16:14:12.741Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c [none]
+[debug] [2023-07-15T16:14:13.481Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c 200
+[debug] [2023-07-15T16:14:13.481Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c {"projectId":"netflix-react-a959c","projectNumber":"188246924199","displayName":"Netflix-react","name":"projects/netflix-react-a959c","resources":{"hostingSite":"netflix-react-a959c"},"state":"ACTIVE","etag":"1_ffee69c7-63f1-4fa8-bd6a-15d44c40c5f8"}
+[info] i  hosting[netflix-react-a959c]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[netflix-react-a959c]: Local server: http://localhost:5003 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5003\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [15/Jul/2023:16:14:34 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Jul/2023:16:14:34 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [15/Jul/2023:16:14:34 +0000] "GET /static/css/main.e71669ac.css HTTP/1.1" 200 - "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Jul/2023:16:14:34 +0000] \"GET /static/css/main.e71669ac.css HTTP/1.1\" 200 - \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [15/Jul/2023:16:14:34 +0000] "GET /static/js/main.e0c52fa5.js HTTP/1.1" 200 - "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Jul/2023:16:14:34 +0000] \"GET /static/js/main.e0c52fa5.js HTTP/1.1\" 200 - \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [15/Jul/2023:16:14:34 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Jul/2023:16:14:34 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [15/Jul/2023:16:14:34 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Jul/2023:16:14:34 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [15/Jul/2023:16:14:34 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Jul/2023:16:14:34 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[debug] [2023-07-15T16:16:12.129Z] ----------------------------------------------------------------------
+[debug] [2023-07-15T16:16:12.131Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-15T16:16:12.131Z] CLI Version:   12.4.4
+[debug] [2023-07-15T16:16:12.131Z] Platform:      win32
+[debug] [2023-07-15T16:16:12.131Z] Node Version:  v18.16.1
+[debug] [2023-07-15T16:16:12.132Z] Time:          Sat Jul 15 2023 21:46:12 GMT+0530 (India Standard Time)
+[debug] [2023-07-15T16:16:12.132Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-15T16:16:12.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-15T16:16:12.239Z] > authorizing via signed-in user (asjadhaider3@gmail.com)
+[debug] [2023-07-15T16:16:12.239Z] [iam] checking project netflix-react-a959c for permissions ["firebase.projects.get"]
+[debug] [2023-07-15T16:16:12.240Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions [none]
+[debug] [2023-07-15T16:16:12.240Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions x-goog-quota-user=projects/netflix-react-a959c
+[debug] [2023-07-15T16:16:12.241Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-15T16:16:13.826Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions 200
+[debug] [2023-07-15T16:16:13.826Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-react-a959c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-15T16:16:13.827Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c [none]
+[debug] [2023-07-15T16:16:14.597Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c 200
+[debug] [2023-07-15T16:16:14.597Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c {"projectId":"netflix-react-a959c","projectNumber":"188246924199","displayName":"Netflix-react","name":"projects/netflix-react-a959c","resources":{"hostingSite":"netflix-react-a959c"},"state":"ACTIVE","etag":"1_ffee69c7-63f1-4fa8-bd6a-15d44c40c5f8"}
+[info] 
+[info] === Serving from 'C:\Users\HP\OneDrive\Desktop\Netflix-clone-master'...
+[info] 
+[debug] [2023-07-15T16:16:14.606Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-react-a959c/sites 
+[debug] [2023-07-15T16:16:15.795Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-react-a959c/sites 200
+[debug] [2023-07-15T16:16:15.795Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-react-a959c/sites {"sites":[{"name":"projects/netflix-react-a959c/sites/netflix-react-a959c","defaultUrl":"https://netflix-react-a959c.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-15T16:16:15.796Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c/webApps/-/config [none]
+[debug] [2023-07-15T16:16:17.121Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c/webApps/-/config 200
+[debug] [2023-07-15T16:16:17.122Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c/webApps/-/config {"projectId":"netflix-react-a959c","appId":"1:188246924199:web:6e420a570ca0bc67403482","storageBucket":"netflix-react-a959c.appspot.com","apiKey":"AIzaSyC4RFQ4UkpmPCDn3dTeCUAYVZbq9vr4Mys","authDomain":"netflix-react-a959c.firebaseapp.com","messagingSenderId":"188246924199"}
+[debug] [2023-07-15T16:16:17.137Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c [none]
+[debug] [2023-07-15T16:16:17.677Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c 200
+[debug] [2023-07-15T16:16:17.678Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-react-a959c {"projectId":"netflix-react-a959c","projectNumber":"188246924199","displayName":"Netflix-react","name":"projects/netflix-react-a959c","resources":{"hostingSite":"netflix-react-a959c"},"state":"ACTIVE","etag":"1_ffee69c7-63f1-4fa8-bd6a-15d44c40c5f8"}
+[info] i  hosting[netflix-react-a959c]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[netflix-react-a959c]: Local server: http://localhost:5004 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5004\u001b[22m\u001b[24m"}}
